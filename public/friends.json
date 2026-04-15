@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Rahim Uddin",
+    "picture": "https://randomuser.me/api/portraits/men/11.jpg",
+    "email": "rahim.uddin@gmail.com",
+    "days_since_contact": 18,
+    "status": "Overdue",
+    "tags": ["BEST FRIEND"],
+    "bio": "We grew up in the same neighborhood in Sylhet and used to play cricket every evening.",
+    "goal": 14,
+    "next_due_date": "2025-07-12"
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "picture": "https://randomuser.me/api/portraits/women/8.jpg",
+    "email": "nusrat.jahan@gmail.com",
+    "days_since_contact": 6,
+    "status": "On-Track",
+    "tags": ["UNIVERSITY", "CLOSE FRIEND"],
+    "bio": "Classmate from SUST. We often work together on assignments and projects.",
+    "goal": 10,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 3,
+    "name": "Tanvir Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/21.jpg",
+    "email": "tanvir.hasan@yahoo.com",
+    "days_since_contact": 12,
+    "status": "Almost Due",
+    "tags": ["TRAVEL", "FRIEND"],
+    "bio": "Met at the gym. We usually motivate each other to stay consistent with workouts.",
+    "goal": 14,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 4,
+    "name": "Ayesha Rahman",
+    "picture": "https://randomuser.me/api/portraits/women/4.jpg",
+    "email": "ayesha.rahman@gmail.com",
+    "days_since_contact": 3,
+    "status": "On-Track",
+    "tags": ["FAMILY"],
+    "bio": "My cousin who lives nearby. We meet during family gatherings and share stories.",
+    "goal": 7,
+    "next_due_date": "2025-07-22"
+  },
+  {
+    "id": 5,
+    "name": "Sakib Mahmud",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "sakib.mahmud@gmail.com",
+    "days_since_contact": 20,
+    "status": "Overdue",
+    "tags": ["SCHOOL", "FRIEND"],
+    "bio": "School friend who now runs a small business. We used to sit on the same bench.",
+    "goal": 15,
+    "next_due_date": "2025-07-10"
+  },
+  {
+    "id": 6,
+    "name": "Fatima Noor",
+    "picture": "https://randomuser.me/api/portraits/women/6.jpg",
+    "email": "fatima.noor@gmail.com",
+    "days_since_contact": 9,
+    "status": "Almost Due",
+    "tags": ["UNIVERSITY"],
+    "bio": "We prepared for exams together. She is very organized and helpful.",
+    "goal": 10,
+    "next_due_date": "2025-07-19"
+  },
+  {
+    "id": 7,
+    "name": "Imran Hossain",
+    "picture": "https://randomuser.me/api/portraits/men/45.jpg",
+    "email": "imran.hossain@gmail.com",
+    "days_since_contact": 2,
+    "status": "On-Track",
+    "tags": ["NEIGHBOR", "FRIEND"],
+    "bio": "Lives next door. We often have tea together in the evening.",
+    "goal": 7,
+    "next_due_date": "2025-07-23"
+  },
+  {
+    "id": 8,
+    "name": "Mariam Akter",
+    "picture": "https://randomuser.me/api/portraits/women/15.jpg",
+    "email": "mariam.akter@gmail.com",
+    "days_since_contact": 13,
+    "status": "Almost Due",
+    "tags": ["COLLEGE"],
+    "bio": "Met during college events. We both enjoy photography and traveling.",
+    "goal": 14,
+    "next_due_date": "2025-07-17"
+  }
+]
