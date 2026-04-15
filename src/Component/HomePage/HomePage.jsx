@@ -6,7 +6,7 @@ import FriendsInfo from './FriendsInfo';
 
 const HomePage = () => {
     return (
-        <div className='bg-gray-100'>
+        <div className='bg-gray-100 giest-font'>
             <Banner></Banner>
             <Stat></Stat>
             <FriendsInfo></FriendsInfo>
