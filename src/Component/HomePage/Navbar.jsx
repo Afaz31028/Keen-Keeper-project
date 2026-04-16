@@ -12,15 +12,23 @@ const Navbar = () => {
                 <img src={navImg} alt="" />
             </div>
             <div className='flex gap-5 items-center'>
-                <NavLink to={"/"} className="flex gap-2 items-center btn">
-                    <IoHomeOutline />
-                    <p>Home</p>
+                <NavLink to={"/"} className={({isActive})=>
+                    `flex gap-2 items-center btn shadow-sm ${isActive ? "bg-green-900 text-base-100" : "" 
+                }`
+            }>
+                <IoHomeOutline />
+                <p>Home</p>
                 </NavLink>
-                <NavLink to={"/timeline"} className="flex gap-2 items-center btn">
+                <NavLink to={"/timeline"} className={({isActive})=>
+                    `flex gap-2 items-center btn shadow-lg ${isActive ? "bg-green-900 text-base-100" : " "}`
+                
+                }>
                     <CiClock2 />
                     <p>Timeline</p>
                 </NavLink>
-                <NavLink to={"/stat"} className="flex gap-2 items-center btn">
+                <NavLink to={"/stat"} className={({isActive})=>
+                    `flex gap-2 items-center btn shadow-lg ${isActive ? "bg-green-900 text-base-100" : ""}`
+                }>
                     <TfiStatsUp />
                     <p>Stat</p>
                 </NavLink>

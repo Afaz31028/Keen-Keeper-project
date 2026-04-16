@@ -18,7 +18,9 @@ const Friend = ({friend}) => {
                     tags.map((tag,index)=><div key={index} tag={tag}><div className="badge bg-green-200 text-neutral text-center text-[12px] font-medium">{tag}</div></div>)
                 }
             </div>
-            <div className="badge badge-warning rounded-3xl text-[12px] font-medium mt-2 text-gray-100 text-center">{status}</div>
+            <div className={`badge badge-warning rounded-3xl text-[12px] font-medium mt-2 text-gray-100 text-center ${status ==="Overdue" ? "bg-red-800 text-base-100" : status==="On-Track" ? "bg-green-800 text-base-100" : "bg-[#EFAD44] text-neutral"}`}>
+                {status}
+            </div>
         </div>
         </Link>
     );
