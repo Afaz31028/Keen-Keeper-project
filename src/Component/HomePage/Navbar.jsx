@@ -20,7 +20,7 @@ const Navbar = () => {
                     <CiClock2 />
                     <p>Timeline</p>
                 </NavLink>
-                <NavLink to={"/"} className="flex gap-2 items-center btn">
+                <NavLink to={"/stat"} className="flex gap-2 items-center btn">
                     <TfiStatsUp />
                     <p>Stat</p>
                 </NavLink>

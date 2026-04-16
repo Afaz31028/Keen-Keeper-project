@@ -8,6 +8,7 @@ import FriendDetails from "./Component/FriendDetails/FriendDetails.jsx";
 import Interaction from "./Component/Interaction/Interaction.jsx";
 import TimelinePage from "./Component/TimelinePage/TimelinePage.jsx";
 import FriendContext from "./Component/FriendContext/FriendContext.jsx";
+import Statistics from "./Component/Statistics/Statistics.jsx";
 
 
 const router = createBrowserRouter([
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path:"/timeline",
         Component: TimelinePage
+      },
+      {
+        path:"/stat",
+        Component: Statistics
       }
     ],
   },
