@@ -6,6 +6,8 @@ import Root from "./Component/Root/Root.jsx";
 import HomePage from "./Component/HomePage/HomePage.jsx";
 import FriendDetails from "./Component/FriendDetails/FriendDetails.jsx";
 import Interaction from "./Component/Interaction/Interaction.jsx";
+import TimelinePage from "./Component/TimelinePage/TimelinePage.jsx";
+import FriendContext from "./Component/FriendContext/FriendContext.jsx";
 
 
 const router = createBrowserRouter([
@@ -27,13 +29,19 @@ const router = createBrowserRouter([
           return filteredFriend;
         },
         Component: FriendDetails
+      },
+      {
+        path:"/timeline",
+        Component: TimelinePage
       }
     ],
   },
 ]);
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <RouterProvider router={router}></RouterProvider>
-  </StrictMode>,
+  <FriendContext>
+      <StrictMode>
+        <RouterProvider router={router}></RouterProvider>
+    </StrictMode>,
+  </FriendContext>
 );

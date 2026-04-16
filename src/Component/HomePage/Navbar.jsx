@@ -16,7 +16,7 @@ const Navbar = () => {
                     <IoHomeOutline />
                     <p>Home</p>
                 </NavLink>
-                <NavLink to={"/"} className="flex gap-2 items-center btn">
+                <NavLink to={"/timeline"} className="flex gap-2 items-center btn">
                     <CiClock2 />
                     <p>Timeline</p>
                 </NavLink>

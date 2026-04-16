@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext} from "react";
 import { BsArchive } from "react-icons/bs";
 import { FaHistory } from "react-icons/fa";
 import { HiOutlineBellSnooze } from "react-icons/hi2";
@@ -8,20 +8,15 @@ import { PiPhoneCallLight } from "react-icons/pi";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { useLoaderData } from "react-router";
 import Interaction from "../Interaction/Interaction";
+import { HistoryContext } from "../FriendContext/FriendContext";
 
 const FriendDetails = () => {
   const friendData = useLoaderData();
-  const { name, tags, picture, days_since_contact, status, email, bio, next_due_date, goal}= friendData;
+  const {id, name, tags, picture, days_since_contact, status, email, bio, next_due_date, goal}= friendData;
 
-  const [contact, setContact]= useState([]);
-  const handleContact=(title)=>{
-    const history={
-        title,
-        name,
-        date: new Date().toLocaleDateString()
-    }
-    setContact([...contact, history]);
-  }
+  const {contactList,handleContactList}= useContext(HistoryContext)
+  const personalContactList= contactList.filter(item=> item.id==id);
+  
   // console.log(friendData)
   return (
     <div className="grid grid-cols-3 max-w-277 mx-auto gap-5 giest-font">
@@ -55,7 +50,7 @@ const FriendDetails = () => {
             <p>Archive</p>
         </div>
         <div className="text-red-500 shadow shadow-gray-700 rounded-sm flex gap-2 justify-center items-center font-medium py-4 px-2">
-            <RiDeleteBin6Line />
+            <RiDeleteBin6Line className="text-xl"/>
             <p>Delete</p>
         </div>
       </div>
@@ -84,15 +79,15 @@ const FriendDetails = () => {
         <div className="shadow shadow-gray-700 rounded-2xl p-6">
             <h5 className="mb-4 text-xl font-medium">Quick Check-In</h5>
             <div className="grid grid-cols-3 gap-5">
-                <button onClick={()=>handleContact("Meetup")} className="shadow shadow-gray-400 bg-gray-100 rounded-2xl p-4 flex flex-col justify-center items-center">
+                <button onClick={()=>handleContactList(["Meetup",id,name])} className="shadow shadow-gray-400 bg-gray-100 rounded-2xl p-4 flex flex-col justify-center items-center">
                      <PiPhoneCallLight className="text-2xl mb-2" />
                     <p>Call</p>
                 </button>
-               <button onClick={()=>handleContact("Text")} className="shadow shadow-gray-400 bg-gray-100 rounded-2xl p-4 flex flex-col justify-center items-center">
+               <button onClick={()=>handleContactList(["Meetup",id,name])} className="shadow shadow-gray-400 bg-gray-100 rounded-2xl p-4 flex flex-col justify-center items-center">
                     <LuMessageSquareMore className="text-2xl mb-2" />
                     <p>Text</p>
                </button>
-               <button onClick={()=>handleContact("Video")} className="shadow shadow-gray-400 bg-gray-100 rounded-2xl p-4 flex flex-col justify-center items-center">
+               <button onClick={()=>handleContactList(["Meetup",id,name])} className="shadow shadow-gray-400 bg-gray-100 rounded-2xl p-4 flex flex-col justify-center items-center">
                     <IoVideocamOutline className="text-2xl mb-2" />
                     <p>Video</p>
                </button>
@@ -107,7 +102,7 @@ const FriendDetails = () => {
                 </button>
             </div>
             {
-                contact.map((item, index)=> <Interaction key={index} item={item}></Interaction>)
+                personalContactList.map((item, index)=> <Interaction key={index} item={item}></Interaction>)
             }
         </div>
       </div>
