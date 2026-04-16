@@ -1,16 +1,105 @@
-# React + Vite
+# 👥 Keen Keeper Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Overview
+Keen Keeper is a modern React-based web application designed to help users maintain and track their friendships through structured interaction logs. It allows users to view friend profiles, track communication history (Call, Text, Video), and analyze interaction patterns through visual analytics.
 
-Currently, two official plugins are available:
+The goal of this project is to encourage meaningful relationships by helping users stay consistent with their social connections.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies Used
+
+- React.js
+- React Router DOM
+- Context API (State Management)
+- Tailwind CSS / CSS3
+- Recharts (Data Visualization)
+- React Icons
+- React Toastify (Notifications)
+
+---
+
+## ✨ Key Features
+
+### 👥 1. Friend Management System
+- Displays a list of friends from a structured JSON file
+- Each friend card shows:
+  - Profile picture
+  - Name
+  - Contact status
+  - Tags
+  - Days since last contact
+- Responsive 4-column grid layout (desktop)
+
+---
+
+### 👤 2. Friend Detail Dashboard
+- Detailed view of each friend
+- Includes:
+  - Profile info (name, email, bio, tags)
+  - Relationship status indicators
+  - Action buttons (Snooze, Archive, Delete UI)
+- Quick interaction tools:
+  - 📞 Call
+  - 💬 Text
+  - 🎥 Video
+
+Each interaction automatically:
+- Adds a timeline entry
+- Shows a toast notification
+
+---
+
+### 📊 3. Friendship Analytics
+- Dedicated Stats page
+- Pie chart visualization using **Recharts**
+- Shows distribution of:
+  - Calls
+  - Texts
+  - Video calls
+
+---
+
+### 📜 4. Interaction Timeline
+- Logs all user interactions in real-time
+- Each entry includes:
+  - Date of interaction
+  - Type icon (Call/Text/Video)
+  - Title (e.g., “Call with John Doe”)
+- Filter system:
+  - View Call only
+  - View Text only
+  - View Video only
+
+---
+
+### 🎨 5. Modern UI/UX Design
+- Fully responsive (mobile, tablet, desktop)
+- Clean layout inspired by Figma design
+- Active navigation highlighting
+- Loading animations during data fetch
+- Custom 404 page for invalid routes
+
+---
+
+### 📱 Responsive Design
+
+- FriendSync is fully responsive and optimized for:
+    - 📱 Mobile devices
+    - 📟 Tablets
+    - 💻 Desktop screens
+
+
+----
+
+### 🔥 Future Improvements
+- Real backend integration (Firebase / Node.js)
+- Authentication system (Login/Signup)
+- Friend reminders & notifications
+- Dark mode support
+- Advanced analytics dashboard
