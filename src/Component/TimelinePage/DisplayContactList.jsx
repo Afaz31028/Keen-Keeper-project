@@ -5,7 +5,7 @@ import textImg from '../../assets/text.png'
 
 const DisplayContactList = ({ list }) => {
   // console.log(list)
-  const {id,name,title,date}=list;
+  const {name,title,date}=list;
   return (
     <div className="shadow shadow-gray-400 rounded-2xl p-3">
       <div className="flex gap-2 items-center">

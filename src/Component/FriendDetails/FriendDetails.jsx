@@ -31,7 +31,7 @@ const FriendDetails = () => {
   // console.log(friendData)
   return (
     <div className="bg-gray-100 py-20 px-10 md:px-20 lg:px-0">
-      <div className="grid grid-cols-1 lg:grid-cols-3 w-full lg:max-w-277 mx-auto gap-5 giest-font">
+      <div className="grid grid-cols-1 lg:grid-cols-3 w-full lg:max-w-280 mx-auto gap-5 giest-font">
         <div className="lg:col-span-1 space-y-3">
           <div className="shadow shadow-gray-400 rounded-2xl p-6 text-center">
             <div className="flex justify-center items-center">
@@ -55,43 +55,43 @@ const FriendDetails = () => {
             <p className="font-medium italic mt-3 text-gray-600">"{bio}"</p>
             <p className="text-sm  text-gray-600">Preferred: {email}</p>
           </div>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-5 my-5">
-            <div className="shadow shadow-gray-400 md:w-60 w-full rounded-sm flex gap-2 justify-center items-center font-medium py-4 px-2">
+          <div className="flex flex-col md:flex-row lg:flex-col justify-center items-center gap-5 my-5">
+            <div className="shadow shadow-gray-400 md:w-60 w-full lg:w-full rounded-sm flex gap-2 justify-center items-center font-medium py-4 px-2">
               <HiOutlineBellSnooze className="text-xl" />
               <p>Snooze 2 weeks</p>
             </div>
-            <div className="shadow shadow-gray-400 md:w-60 w-full rounded-sm flex gap-2 justify-center items-center font-medium py-4 px-2">
+            <div className="shadow shadow-gray-400 md:w-60 lg:w-full w-full rounded-sm flex gap-2 justify-center items-center font-medium py-4 px-2">
               <BsArchive />
               <p>Archive</p>
             </div>
-            <div className="text-red-500 shadow shadow-gray-400 md:w-60 w-full rounded-sm flex gap-2 justify-center items-center font-medium py-4 px-2">
+            <div className="text-red-500 shadow shadow-gray-400 md:w-60 lg:w-full w-full rounded-sm flex gap-2 justify-center items-center font-medium py-4 px-2">
               <RiDeleteBin6Line className="text-xl" />
               <p>Delete</p>
             </div>
           </div>
         </div>
-        <div className="lg:col-span-2 space-y-3">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 my-10 md:my-0 place-items-center">
-            <div className="p-8 text-center w-65 shadow shadow-gray-400 rounded-sm">
+        <div className="lg:col-span-2 space-y-5">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 my-10 md:my-0 place-items-center lg:items-center">
+            <div className="p-8 text-center w-60 shadow shadow-gray-400 rounded-sm">
               <h1 className="text-[#244D3F] text-[30px] font-semibold">
                 {days_since_contact}
               </h1>
               <p className="text-[#64748B] text-[18px]">Days Since Contact</p>
             </div>
-            <div className="p-8 text-center  w-65 shadow shadow-gray-400 rounded-sm">
+            <div className="p-8 text-center  w-60 shadow shadow-gray-400 rounded-sm">
               <h1 className="text-[#244D3F] text-[32px] font-semibold">
                 {goal}
               </h1>
               <p className="text-[#64748B] text-[18px]">Goal(Days)</p>
             </div>
-            <div className="p-8 text-center w-65 shadow shadow-gray-400 rounded-sm">
+            <div className="p-8 text-center w-60 shadow shadow-gray-400 rounded-sm">
               <h1 className="text-[#244D3F] text-[32px] font-semibold">
                 {next_due_date}
               </h1>
               <p className="text-[#64748B] text-[18px]">Next Due Date</p>
             </div>
           </div>
-          <div className="shadow shadow-gray-400 rounded-2xl p-6">
+          <div className="shadow shadow-gray-400 rounded-2xl p-6 mt-5">
             <div className="flex justify-between items-center">
               <h4 className="text-xl font-medium">Relationship Goal</h4>
               <button className="btn shadow">Edit</button>
