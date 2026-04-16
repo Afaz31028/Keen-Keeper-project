@@ -10,6 +10,7 @@ import TimelinePage from "./Component/TimelinePage/TimelinePage.jsx";
 import FriendContext from "./Component/FriendContext/FriendContext.jsx";
 import Statistics from "./Component/Statistics/Statistics.jsx";
 import { ToastContainer } from "react-toastify";
+import WrongPath from "./Component/WrongPath/WrongPath.jsx";
 
 
 const router = createBrowserRouter([
@@ -41,6 +42,7 @@ const router = createBrowserRouter([
         Component: Statistics
       }
     ],
+    errorElement: <WrongPath></WrongPath>
   },
 ]);
 
