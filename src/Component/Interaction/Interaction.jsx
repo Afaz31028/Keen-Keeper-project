@@ -20,7 +20,7 @@ const Interaction = ({item}) => {
                     <h4 className='text-lg'>{title}</h4>
                     {
                         title==="Text" ? <h5 className='text-gray-500'>Text with {name}</h5>
-                            : title==="Meetup" ? <h5 className='text-gray-500'>Call with {name}</h5>
+                            : title==="Call" ? <h5 className='text-gray-500'>Call with {name}</h5>
                                 : <h5 className='text-gray-500'>Video with {name}</h5>
                     }
                 </div>
