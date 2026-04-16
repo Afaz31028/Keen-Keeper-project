@@ -7,7 +7,7 @@ import socialImg3 from '../../assets/twitter.png'
 
 const Footer = () => {
     return (
-        <div className='bg-[#244D3F] max-w-full px-61 pt-20 pb-5 text-center mx-auto'>
+        <div className='bg-[#244D3F] max-w-full px-10 lg:px-61 pt-10 lg:pt-20 pb-5 text-center mx-auto'>
             <div className='flex justify-center'>
                 <img className='text-center' src={footerImg} alt="FooterImage" />
             </div>
@@ -18,9 +18,9 @@ const Footer = () => {
                 <Link><img src={socialImg2} alt=""/></Link>
                 <Link><img src={socialImg3} alt=""/></Link>
             </div>
-            <div className='flex justify-between items-center text-[#FAFAFA] mt-10 border-t border-gray-600 py-5'>
+            <div className='flex flex-col-reverse md:flex-row gap-4 md:gap-0 justify-between items-center text-[#FAFAFA] mt-10 border-t border-gray-600 py-5'>
                 <div>© 2026 KeenKeeper. All rights reserved.</div>
-                <div className='flex gap-5'>
+                <div className='flex flex-col md:flex-row gap-2 md:gap-5'>
                     <p>Privecy Policy</p>
                     <p>Terms & Condition</p>
                     <p>Cookies</p>

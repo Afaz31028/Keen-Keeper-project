@@ -1,4 +1,5 @@
 import React, { createContext, useState } from "react";
+import { toast } from "react-toastify";
 
 export const HistoryContext = createContext();
 
@@ -11,6 +12,11 @@ const FriendContext = ({ children }) => {
   const handleContactList = (details) => {
     const [title, id, name]= details;
 
+    {
+      title==="Text" ? toast.success(`Text interaction with ${name} was successful!!`, { theme: "dark"}) 
+          : title==="Call" ?  toast.success(`Your Call with ${name} was successful!!`, { theme: "dark"}) 
+              : toast.success(`A video call with ${name} was successful!!`, { theme: "dark"})
+    }
     const history = {
       title,
       id,

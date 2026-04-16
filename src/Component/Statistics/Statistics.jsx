@@ -22,7 +22,7 @@ const Statistics = () => {
   const COLORS = ["#8b5cf6", "#22c55e", "#1f2937"];
 
   return (
-    <div className="bg-gray-100 px-5 py-10">
+    <div className="bg-gray-100 px-5 md:px-20 py-10">
       <div className="max-w-277 mx-auto">
         <h1 className="text-5xl font-bold mb-4">Friendship Analytics</h1>
         <div className="w-full h-100 shadow-md shadow-gray-400 rounded-2xl mt-6 px-10 py-20">
