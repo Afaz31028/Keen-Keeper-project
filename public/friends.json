@@ -2,11 +2,11 @@
   {
     "id": 1,
     "name": "Rahim Uddin",
-    "picture": "https://randomuser.me/api/portraits/men/11.jpg",
+    "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
     "email": "rahim.uddin@gmail.com",
     "days_since_contact": 18,
     "status": "Overdue",
-    "tags": ["BEST FRIEND"],
+    "tags": ["Best Friend"],
     "bio": "We grew up in the same neighborhood in Sylhet and used to play cricket every evening.",
     "goal": 14,
     "next_due_date": "2025-07-12"
@@ -14,11 +14,11 @@
   {
     "id": 2,
     "name": "Nusrat Jahan",
-    "picture": "https://randomuser.me/api/portraits/women/8.jpg",
+    "picture": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
     "email": "nusrat.jahan@gmail.com",
     "days_since_contact": 6,
     "status": "On-Track",
-    "tags": ["UNIVERSITY"],
+    "tags": ["University"],
     "bio": "Classmate from SUST. We often work together on assignments and projects.",
     "goal": 10,
     "next_due_date": "2025-07-20"
@@ -26,23 +26,23 @@
   {
     "id": 3,
     "name": "Tanvir Hasan",
-    "picture": "https://randomuser.me/api/portraits/men/21.jpg",
+    "picture": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80",
     "email": "tanvir.hasan@yahoo.com",
     "days_since_contact": 12,
     "status": "Almost Due",
-    "tags": ["TRAVEL", "FRIEND"],
-    "bio": "Met at the gym. We usually motivate each other to stay consistent with workouts.",
+    "tags": ["Travel", "Friend"],
+    "bio": "Met at the gym. We motivate each other to stay consistent with workouts.",
     "goal": 14,
     "next_due_date": "2025-07-18"
   },
   {
     "id": 4,
     "name": "Ayesha Rahman",
-    "picture": "https://randomuser.me/api/portraits/women/4.jpg",
+    "picture": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80",
     "email": "ayesha.rahman@gmail.com",
     "days_since_contact": 3,
     "status": "On-Track",
-    "tags": ["FAMILY"],
+    "tags": ["Family"],
     "bio": "My cousin who lives nearby. We meet during family gatherings and share stories.",
     "goal": 7,
     "next_due_date": "2025-07-22"
@@ -50,11 +50,11 @@
   {
     "id": 5,
     "name": "Sakib Mahmud",
-    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "picture": "https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&fit=crop&w=400&q=80",
     "email": "sakib.mahmud@gmail.com",
     "days_since_contact": 20,
     "status": "Overdue",
-    "tags": ["SCHOOL", "FRIEND"],
+    "tags": ["School", "Friend"],
     "bio": "School friend who now runs a small business. We used to sit on the same bench.",
     "goal": 15,
     "next_due_date": "2025-07-10"
@@ -62,11 +62,11 @@
   {
     "id": 6,
     "name": "Fatima Noor",
-    "picture": "https://randomuser.me/api/portraits/women/6.jpg",
+    "picture": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80",
     "email": "fatima.noor@gmail.com",
     "days_since_contact": 9,
     "status": "Almost Due",
-    "tags": ["UNIVERSITY"],
+    "tags": ["University"],
     "bio": "We prepared for exams together. She is very organized and helpful.",
     "goal": 10,
     "next_due_date": "2025-07-19"
@@ -74,11 +74,11 @@
   {
     "id": 7,
     "name": "Imran Hossain",
-    "picture": "https://randomuser.me/api/portraits/men/45.jpg",
+    "picture": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
     "email": "imran.hossain@gmail.com",
     "days_since_contact": 2,
     "status": "On-Track",
-    "tags": ["NEIGHBOR", "FRIEND"],
+    "tags": ["Neighbor", "Friend"],
     "bio": "Lives next door. We often have tea together in the evening.",
     "goal": 7,
     "next_due_date": "2025-07-23"
@@ -86,11 +86,11 @@
   {
     "id": 8,
     "name": "Mariam Akter",
-    "picture": "https://randomuser.me/api/portraits/women/15.jpg",
+    "picture": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
     "email": "mariam.akter@gmail.com",
     "days_since_contact": 13,
     "status": "Almost Due",
-    "tags": ["COLLEGE"],
+    "tags": ["College"],
     "bio": "Met during college events. We both enjoy photography and traveling.",
     "goal": 14,
     "next_due_date": "2025-07-17"

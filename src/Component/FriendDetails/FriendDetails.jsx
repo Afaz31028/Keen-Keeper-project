@@ -46,7 +46,7 @@ const FriendDetails = () => {
             <div className="flex gap-3 justify-center items-center mt-2">
               {tags.map((tag, index) => (
                 <div key={index} tag={tag}>
-                  <div className="badge bg-green-200 text-neutral text-center text-[12px] font-medium">
+                  <div className="badge bg-green-200 border-2 border-gray-600 text-neutral text-center text-[12px] font-medium">
                     {tag}
                   </div>
                 </div>
@@ -56,18 +56,19 @@ const FriendDetails = () => {
             <p className="text-sm  text-gray-600">Preferred: {email}</p>
           </div>
           <div className="flex flex-col md:flex-row lg:flex-col justify-center items-center gap-5 my-5">
-            <div className="shadow shadow-gray-400 md:w-60 w-full lg:w-full rounded-sm flex gap-2 justify-center items-center font-medium py-4 px-2">
-              <HiOutlineBellSnooze className="text-xl" />
-              <p>Snooze 2 weeks</p>
-            </div>
-            <div className="shadow shadow-gray-400 md:w-60 lg:w-full w-full rounded-sm flex gap-2 justify-center items-center font-medium py-4 px-2">
-              <BsArchive />
-              <p>Archive</p>
-            </div>
-            <div className="text-red-500 shadow shadow-gray-400 md:w-60 lg:w-full w-full rounded-sm flex gap-2 justify-center items-center font-medium py-4 px-2">
-              <RiDeleteBin6Line className="text-xl" />
-              <p>Delete</p>
-            </div>
+            <button className="shadow shadow-gray-400 md:w-60 lg:w-full w-full rounded-sm flex gap-2 justify-center items-center font-medium py-4 px-2">
+                <RiDeleteBin6Line className="text-xl" />
+                <p>Snooze 2 weeks</p>
+              </button>
+            <button className="shadow shadow-gray-400 md:w-60 lg:w-full w-full rounded-sm flex gap-2 justify-center items-center font-medium py-4 px-2">
+                <RiDeleteBin6Line className="text-xl" />
+                <p>Archive</p>
+              </button>
+              <button className=" text-red-500 shadow shadow-gray-400 md:w-60 lg:w-full w-full rounded-sm flex gap-2 justify-center items-center font-medium py-4 px-2">
+                <RiDeleteBin6Line className="text-xl" />
+                <p>Delete</p>
+              </button>
+          
           </div>
         </div>
         <div className="lg:col-span-2 space-y-5">

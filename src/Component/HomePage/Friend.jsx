@@ -15,7 +15,7 @@ const Friend = ({friend}) => {
             <p className='text-[12px] mt-2'>{days_since_contact}d ago</p>
             <div className='flex gap-3 justify-center items-center mt-2'>
                 {
-                    tags.map((tag,index)=><div key={index} tag={tag}><div className="badge bg-green-200 text-neutral text-center text-[12px] font-medium">{tag}</div></div>)
+                    tags.map((tag,index)=><div key={index} tag={tag}><div className="badge bg-green-200 border-2 border-gray-600 text-neutral text-center text-[12px] font-medium">{tag}</div></div>)
                 }
             </div>
             <div className={`badge badge-warning rounded-3xl text-[12px] font-medium mt-2 text-gray-100 text-center ${status ==="Overdue" ? "bg-red-800 text-base-100" : status==="On-Track" ? "bg-green-800 text-base-100" : "bg-[#EFAD44] text-neutral"}`}>

@@ -9,7 +9,7 @@ const Banner = () => {
             <p className='text-[#64748B]'>Your personal shelf of meaningful connections. Browse, tend, and nurture the <br />
                 relationships that matter most.</p>
             <div className='flex justify-center gap-3 items-center mt-8'>
-                <button className='btn bg-green-800 text-base-100 font-semibold'>
+                <button className='btn bg-green-900 text-base-100 font-semibold'>
                     <LuPlus />
                     <p>Add Friends</p>
                 </button>

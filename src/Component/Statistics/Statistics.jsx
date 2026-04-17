@@ -27,6 +27,9 @@ const Statistics = () => {
         <h1 className="text-5xl font-bold mb-4">Friendship Analytics</h1>
         <div className="w-full h-100 shadow-md shadow-gray-400 rounded-2xl mt-6 px-10 py-20">
         <h5 className="text-xl font-semibold text-[#244D3F]">By Interaction Type</h5>
+        {
+          (countCall===0 && countText===0 && countVideo===0) ? <div className="text-center mt-20 text-3xl font-bold text-gray-500">No Interactions Available Yet!!</div> : 
+      
         <ResponsiveContainer>
           <PieChart>
             <Pie
@@ -42,13 +45,14 @@ const Statistics = () => {
               ))}
             </Pie>
             <Tooltip />
-            <Legend
+          <Legend
                 verticalAlign="bottom"
                 align="center"
                 iconType="circle"
             />
           </PieChart>
         </ResponsiveContainer>
+      }
       </div>
       </div>
     </div>

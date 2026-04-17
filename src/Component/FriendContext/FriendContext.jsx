@@ -13,9 +13,9 @@ const FriendContext = ({ children }) => {
     const [title, id, name]= details;
 
     {
-      title==="Text" ? toast.success(`Text interaction with ${name} was successful!!`, { theme: "dark"}) 
-          : title==="Call" ?  toast.success(`Your Call with ${name} was successful!!`, { theme: "dark"}) 
-              : toast.success(`A video call with ${name} was successful!!`, { theme: "dark"})
+      title==="Text" ? toast.success(`Text interaction with ${name} was successful!!`, { theme: "dark", position: "top-center", autoClose: 3000}) 
+          : title==="Call" ?  toast.success(`Your Call with ${name} was successful!!`, { theme: "dark" , position: "top-center", autoClose: 3000}) 
+              : toast.success(`A video call with ${name} was successful!!`, { theme: "dark" , position: "top-center", autoClose: 3000})
     }
     const history = {
       title,
