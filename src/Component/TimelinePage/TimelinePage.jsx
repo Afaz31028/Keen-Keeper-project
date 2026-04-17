@@ -49,7 +49,7 @@ const TimelinePage = () => {
         </select>
 
         {
-          contactList.length===0 ? <div className="shadow shadow-gray-500 p-42 text-center text-2xl font-bold text-gray-500 rounded-2xl">"No Interaction List Available Now!!"</div> :" " 
+          contactList.length===0 ? <div className="shadow shadow-gray-500 p-15 md:p-42  text-center text-2xl font-bold text-gray-500 rounded-2xl">"No Interaction List Available Now!!"</div> :" " 
         }
         <div className="space-y-5">
           {filteredList.map((list, index) => (

@@ -7,7 +7,7 @@ import socialImg3 from '../../assets/twitter.png'
 
 const Footer = () => {
     return (
-        <div className='bg-[#244D3F] max-w-full px-10 lg:px-61 pt-10 lg:pt-20 pb-5 text-center mx-auto'>
+        <div className='bg-[#244D3F] max-w-full px-10 lg:px-61 pt-10 lg:pt-20 lg:pb-5 text-center mx-auto'>
             <div className='flex justify-center'>
                 <img className='text-center' src={footerImg} alt="FooterImage" />
             </div>
